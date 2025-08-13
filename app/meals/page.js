@@ -1,21 +1,18 @@
 import Link from "next/link";
 
+import classes from "./page.module.css";
+
 export default function Meals() {
   return (
     <>
-      <h1>meals</h1>
-      <p>
-        <Link href="/meals/share">share</Link>
-      </p>
-      <p>
-        <Link href="/">app</Link>
-      </p>
-      <p>
-        <Link href="/meals/post1">post1</Link>
-      </p>
-      <p>
-        <Link href="/meals/post2">post2</Link>
-      </p>
+      <header className={classes.header}>
+        <h1 className={classes.highlight}>for you</h1>
+        <p>lortfhiifuhopojjvxxdxszse</p>
+        <p className={classes.cta}>
+          <Link href="/meals/share">Share your foods</Link>
+        </p>
+      </header>
+      <main></main>
     </>
   );
 }
