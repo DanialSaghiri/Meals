@@ -5,6 +5,7 @@ import Image from "next/image";
 
 import classes from "./main-header.module.css";
 import MainHeaderBackground from "./main-header-background";
+import NavLink from "./nav-link";
 
 export default function ManinHeader() {
   return (
@@ -17,10 +18,10 @@ export default function ManinHeader() {
       <div className={classes.nav}>
         <ul>
           <li>
-            <Link href="/meals">meals</Link>
+            <NavLink href="/meals">meals</NavLink>
           </li>
           <li>
-            <Link href="/community">community</Link>
+            <NavLink href="/community">community</NavLink>
           </li>
         </ul>
       </div>
