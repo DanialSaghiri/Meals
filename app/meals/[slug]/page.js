@@ -4,6 +4,17 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import classes from "./page.module.css";
 
+export async function generateMetadata({ params }) {
+  const meal = GetMeal(params.slug);
+
+  if (!meal) notFound();
+
+  return {
+    title: meal.title,
+    description: meal.summary,
+  };
+}
+
 export default function MealsDetail({ params }) {
   const meal = GetMeal(params.slug);
 

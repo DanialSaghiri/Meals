@@ -2,8 +2,8 @@ import ManinHeader from "@/components/main-header/main-header";
 import "./globals.css";
 
 export const metadata = {
-  title: "NextJS Course App",
-  description: "Your first NextJS app!",
+  title: "NextLevel Food",
+  description: "Delicious meals, shared by a food-loving community.",
 };
 
 export default function RootLayout({ children }) {
